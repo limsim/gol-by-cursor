@@ -12,6 +12,7 @@
 - [Available Commands](#available-commands)
 - [Technologies Used](#technologies-used)
 - [License](#license)
+- [Future Improvements 🚀](#future-improvements-)
 
 ## What is it? 🤔
 
@@ -100,7 +101,7 @@ game-of-life/
 │   └── index.html           # Main HTML file
 ├── src/                     # Source code
 │   ├── types/               # TypeScript type definitions
-│   │   └── index.ts
+│   │   └��─ index.ts
 │   ├── components/          # UI components
 │   │   └── GameBoard.ts
 │   ├── utils/              # Helper functions
@@ -130,3 +131,30 @@ game-of-life/
 ## License
 
 MIT License - feel free to use this code for your own projects!
+
+## Future Improvements 🚀
+
+Here's what we're planning to add:
+
+- [ ] Code Quality
+  - [ ] Add ESLint for code linting
+  - [ ] Set up Prettier for consistent code formatting
+  - [ ] Implement TypeScript strict mode
+
+- [ ] Testing
+  - [ ] Set up Jest testing framework
+  - [ ] Add unit tests for game logic
+  - [ ] Add integration tests for UI components
+
+- [ ] CI/CD
+  - [ ] Set up GitHub Actions
+  - [ ] Add automated testing on push
+  - [ ] Add automated deployment
+
+- [ ] Features
+  - [ ] Add preset patterns (glider, blinker, etc.)
+  - [ ] Add grid size controls
+  - [ ] Add simulation speed control
+  - [ ] Add pattern saving/loading
+
+Feel free to contribute to any of these improvements!
