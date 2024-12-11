@@ -11,8 +11,8 @@
 - [Project Structure](#project-structure)
 - [Available Commands](#available-commands)
 - [Technologies Used](#technologies-used)
-- [License](#license)
 - [Future Improvements 🚀](#future-improvements-)
+- [License](#license)
 
 ## What is it? 🤔
 
@@ -101,7 +101,7 @@ game-of-life/
 │   └── index.html           # Main HTML file
 ├── src/                     # Source code
 │   ├── types/               # TypeScript type definitions
-│   │   └��─ index.ts
+│   │   └── index.ts
 │   ├── components/          # UI components
 │   │   └── GameBoard.ts
 │   ├── utils/              # Helper functions
@@ -127,10 +127,6 @@ game-of-life/
 - Webpack
 - CSS
 - HTML5
-
-## License
-
-MIT License - feel free to use this code for your own projects!
 
 ## Future Improvements 🚀
 
@@ -158,3 +154,7 @@ Here's what we're planning to add:
   - [ ] Add pattern saving/loading
 
 Feel free to contribute to any of these improvements!
+
+## License
+
+MIT License - feel free to use this code for your own projects!
