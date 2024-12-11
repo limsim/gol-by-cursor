@@ -55,6 +55,7 @@ npm install
 ```
 
 ## Project Structure
+```
 gol-with-cursor/
 ├── src/                      # Main source code directory
 │   ├── types/               # TypeScript type definitions and interfaces
@@ -73,6 +74,7 @@ gol-with-cursor/
 ├── .prettierrc             # Prettier configuration for code formatting
 ├── .gitignore              # Specifies which files Git should ignore
 └── README.md               # Project documentation
+```
 
 ## Running the Application
 
