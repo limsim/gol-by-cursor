@@ -1,6 +1,17 @@
-# Game of Life with the help of Cursor
+# Game of Life with TypeScript
 
-Hi there! Let's learn about a super fun game called "The Game of Life"!
+## Table of Contents
+- [What is it? 🤔](#what-is-it-)
+- [How does it work? 🎮](#how-does-it-work-)
+- [The Magic Part! ✨](#the-magic-part-)
+- [How to Play 🎮](#how-to-play-)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Available Commands](#available-commands)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
 ## What is it? 🤔
 
@@ -25,15 +36,30 @@ The tiny creatures follow three simple rules:
 
 Empty squares can get new creatures too! If an empty square has exactly 3 creature neighbors, a new creature appears there - like magic! 🪄
 
-## How to Watch It 👀
+## How to Play 🎮
 
-1. Start with any pattern you like
-2. Watch as the creatures follow these simple rules
-3. See how your pattern changes and moves
-4. It's like a tiny world that changes all by itself!
+1. **Access the Game**
+   - After running `npm run dev`, your browser will automatically open to `http://localhost:9000`
+   - If it doesn't open automatically, manually navigate to `http://localhost:9000`
 
-Isn't it amazing how such simple rules can create such fun patterns? 🌈
+2. **Game Controls**
+   - **Start**: Click the "Start" button to begin the simulation
+   - **Stop**: Click the "Stop" button to pause the simulation
+   - **Clear**: Click the "Clear" button to reset the grid
+   - **Randomize**: Click the "Randomize" button to create a random pattern
 
+3. **Creating Patterns**
+   - Click any cell on the grid to toggle it between alive (green) and dead (white)
+   - You can create patterns while the simulation is running or stopped
+   - Try creating some classic patterns:
+     - **Blinker**: Three cells in a row
+     - **Glider**: A pattern that moves diagonally across the grid
+     - **Block**: Four cells in a 2x2 square
+
+4. **Tips**
+   - Start with simple patterns to understand how the rules work
+   - Use the "Stop" button to pause and modify your pattern
+   - Try the "Randomize" button to see how complex patterns evolve
 
 ## Prerequisites
 
@@ -42,38 +68,15 @@ Isn't it amazing how such simple rules can create such fun patterns? 🌈
 
 ## Installation
 
-1. Clone the repository and navigate to the project directory
+1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/game-of-life-with-cursor.git
-
-cd game-of-life-with-cursor
+git clone https://github.com/your-username/game-of-life.git
+cd game-of-life
 ```
 
-2. Install dependencies
+2. Install dependencies:
 ```bash
 npm install
-```
-
-## Project Structure
-```
-gol-with-cursor/
-├── src/                      # Main source code directory
-│   ├── types/               # TypeScript type definitions and interfaces
-│   │   └── index.ts         # Central export point for all types
-│   ├── utils/               # Helper functions and utilities
-│   │   └── index.ts         # Central export point for utilities
-│   ├── __tests__/           # Test files directory
-│   │   └── index.test.ts    # Initial test file
-│   └── index.ts             # Main application entry point
-│
-├── dist/                     # Compiled JavaScript output (generated after build)
-│
-├── package.json             # Project metadata and dependencies
-├── tsconfig.json            # TypeScript compiler configuration
-├── .eslintrc               # ESLint configuration for code linting
-├── .prettierrc             # Prettier configuration for code formatting
-├── .gitignore              # Specifies which files Git should ignore
-└── README.md               # Project documentation
 ```
 
 ## Running the Application
@@ -83,50 +86,47 @@ For development (with hot reload):
 npm run dev
 ```
 
-For production:
+This will start the development server at `http://localhost:9000`
+
+For production build:
 ```bash
 npm run build
-npm run start
 ```
 
-## Running Tests
-
-Execute the test suite:
-```bash
-npm run test
+## Project Structure
 ```
-
+game-of-life/
+├── public/                   # Static files
+│   └── index.html           # Main HTML file
+├── src/                     # Source code
+│   ├── types/               # TypeScript type definitions
+│   │   └── index.ts
+│   ├── components/          # UI components
+│   │   └── GameBoard.ts
+│   ├── utils/              # Helper functions
+│   │   └── gameLogic.ts
+│   ├── styles.css          # Global styles
+│   └── index.ts            # Entry point
+├── dist/                    # Compiled output
+├── webpack.config.js        # Webpack configuration
+├── tsconfig.json           # TypeScript configuration
+├── package.json            # Project dependencies and scripts
+└── README.md               # This file
+```
 
 ## Available Commands
 
 - `npm run dev` - Start development server with hot reload
-- `npm run build` - Build the project
-- `npm start` - Run the built project
-- `npm test` - Run tests
-- `npm run lint` - Check for linting issues
-- `npm run lint:fix` - Fix linting issues automatically
-- `npm run format` - Format code with Prettier
+- `npm start` - Start production server
+- `npm run build` - Build for production
+
+## Technologies Used
+
+- TypeScript
+- Webpack
+- CSS
+- HTML5
 
 ## License
 
-MIT License
-
-Copyright (c) 2024
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+MIT License - feel free to use this code for your own projects!
