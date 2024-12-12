@@ -48,6 +48,7 @@ Empty squares can get new creatures too! If an empty square has exactly 3 creatu
    - **Stop**: Click the "Stop" button to pause the simulation
    - **Clear**: Click the "Clear" button to reset the grid
    - **Randomize**: Click the "Randomize" button to create a random pattern
+   - 🌓 **Theme**: Toggle between dark and light modes
 
 3. **Creating Patterns**
    - Click any cell on the grid to toggle it between alive (green) and dead (white)
@@ -61,6 +62,22 @@ Empty squares can get new creatures too! If an empty square has exactly 3 creatu
    - Start with simple patterns to understand how the rules work
    - Use the "Stop" button to pause and modify your pattern
    - Try the "Randomize" button to see how complex patterns evolve
+
+## Styling
+The application features two themes:
+- **Dark Theme (Default)**
+  - Dark background (#1a1a1a)
+  - Green cells for live states (#4CAF50)
+  - Dark gray cells for dead states (#333)
+- **Light Theme**
+  - White background (#ffffff)
+  - Green cells for live states (#4CAF50)
+  - Light gray cells for dead states (#eee)
+
+Both themes include:
+- Smooth transitions for cell state changes
+- Responsive button styling
+- Consistent color scheme
 
 ## Prerequisites
 

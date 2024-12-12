@@ -11,6 +11,11 @@ export class GameBoard {
     
     this.container = container;
     this.game = game;
+    
+    // Load saved theme preference or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    
     this.initialize();
   }
 
@@ -29,6 +34,7 @@ export class GameBoard {
       { text: 'Stop', onClick: () => this.stop() },
       { text: 'Clear', onClick: () => this.clear() },
       { text: 'Randomize', onClick: () => this.randomize() },
+      { text: '🌓 Theme', onClick: () => this.toggleTheme() },
     ];
 
     buttons.forEach(({ text, onClick }) => {
@@ -108,5 +114,15 @@ export class GameBoard {
     this.stop();
     this.game.randomize();
     this.render();
+  }
+
+  private toggleTheme(): void {
+    const root = document.documentElement;
+    const currentTheme = root.getAttribute('data-theme') || 'light';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', newTheme);
+    
+    // Optionally save preference
+    localStorage.setItem('theme', newTheme);
   }
 }
